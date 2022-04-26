@@ -23,6 +23,10 @@ output("3.Element: " + intArr[2]);
 output("letzeElement: " + intArr[3]);
 output("letze Element: " + intArr[intArr.length-1]);
 output("super der groschen ist gefallen");
+String[]strArr  = {" ich "," bis"," Bernhard"};
+output("1.Element" + strArr[0]);
+output("2.Element" + strArr[1]);
+output("3.Element" + strArr[2]);//3,4,5,6,7,//test
 
 
     }
