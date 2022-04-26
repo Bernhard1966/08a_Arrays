@@ -27,20 +27,33 @@ public class App {
         // output("Test: " + intArr[10]);
 
         // 2. Array II
-         String[] strArr = {"Ich","bin","Atanas","der","Coole"};
+        //  String[] strArr = {"Ich","bin","Atanas","der","Coole"};
          
         //  output("1.Element: " + strArr[0]);
         //  output("2.Element: " + strArr[1]);
         //  output("3.Element: " + strArr[2]);  // 3,4,5,6,7, ....
 
-        for (int i = 0; i < strArr.length; i++) 
-        {
-            output(strArr[i]); 
-            // output("Element "+ Integer.toString(i + 1) + ": " + strArr[i]);        
-        }
+        // Iteration mit For-Schleife / Loop
+        // for (int i = 0; i < strArr.length; i++) 
+        // {
+        //     output(strArr[i]); 
+        //     // output("Element "+ Integer.toString(i + 1) + ": " + strArr[i]);        
+        // }
 
-        
-        
+        // 3. Mehrdimensionale Arrays
+		// String [][] strMdArr = new String [2][2];
+		String [][] strMdArr = {{"Max","Mustermann"},{"Maxine","Musterfrau"}};
+        // output(strMdArr[0][0]);
+		// output(strMdArr[1][1]);
+
+        // nested loops
+		for (int i = 0; i < strMdArr.length; i++) {
+			for (int j = 0; j < strMdArr.length; j++) {
+				output("Indizes i/j: " + "i:" +  i + " j:"+ j + " " + strMdArr[i][j]);
+			}
+		}
+
+
     }
 
     public static void output(String outputStr) {
