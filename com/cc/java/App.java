@@ -42,17 +42,53 @@ public class App {
 
         // 3. Mehrdimensionale Arrays
 		// String [][] strMdArr = new String [2][2];
-		String [][] strMdArr = {{"Max","Mustermann"},{"Maxine","Musterfrau"}};
+		// String [][] strMdArr = {{"Max","Mustermann"},{"Maxine","Musterfrau"}};
         // output(strMdArr[0][0]);
 		// output(strMdArr[1][1]);
 
         // nested loops
-		for (int i = 0; i < strMdArr.length; i++) {
-			for (int j = 0; j < strMdArr.length; j++) {
-				output("Indizes i/j: " + "i:" +  i + " j:"+ j + " " + strMdArr[i][j]);
-			}
+		// for (int i = 0; i < strMdArr.length; i++) {
+		// 	for (int j = 0; j < strMdArr.length; j++) {
+		// 		output("Indizes i/j: " + "i:" +  i + " j:"+ j + " " + strMdArr[i][j]);
+		// 	}
+		// }
+
+        // Deklaration | Chars
+		char [] letters = {'d','c','a','A','b'};
+	
+		output("");
+		output("---- vor Sortierung: ");
+		for (int i = 0; i < letters.length; i++) {
+			output(letters[i]);	
 		}
 
+		// Sortierfkt. --> sortiertes Array
+		Arrays.sort(letters);  // Statische Klasse | Methode
+
+		output("");
+		output("---- nach Sortierung: ");
+		for (int i = 0; i < letters.length; i++) {
+			output(letters[i]);	
+		}
+
+		// ... danach Suche (1)
+        output("");
+		output("---- Suche: erfolgreich ----");
+		int searchIndex = Arrays.binarySearch(letters,'a');
+		output(" searchIndex: " + searchIndex);
+	
+        // ... danach Suche (2)
+		output("---- Suche: erfolglos ----");
+		searchIndex = Arrays.binarySearch(letters,'e');
+		output(" searchIndex: " + searchIndex);  // -(length+1)
+		// .... isInArray()
+		
+        //.. Array füllen
+		output("---- fill() ----");
+		Arrays.fill(letters, '0');
+		for (int i = 0; i < letters.length; i++) {
+			output((letters[i]));
+		}
 
     }
 
@@ -60,6 +96,10 @@ public class App {
         System.out.println(outputStr);
     }
 
+    // überladene Methode
+    private static void output(char outChar) {
+        System.out.print(outChar);
+    }
 
 
 }
