@@ -28,7 +28,9 @@ output("1.Element" + strArr[0]);
 output("2.Element" + strArr[1]);
 output("3.Element" + strArr[2]);//3,4,5,6,7,//test2
 //hallo? änderen
-
+        for (int i = 0; i<5;i++){
+            output("i: " + i);
+        }
     }
 
     public static void output(String outputStr) {
