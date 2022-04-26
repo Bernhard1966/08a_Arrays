@@ -15,11 +15,14 @@ intArr[0] = 1;
 intArr[1] = 2;
 intArr[2] = 3;
 intArr[3] = 4;
+//intArr[4] = 10;//auserhalb der Gernze out of bounds
+//nochwas
 output("1.Element: " + intArr[0]);
 output("2.Element: " + intArr[1]);
 output("3.Element: " + intArr[2]);
 output("letzeElement: " + intArr[3]);
 output("letze Element: " + intArr[intArr.length-1]);
+output("super der groschen ist gefallen");
 
 
     }
