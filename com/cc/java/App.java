@@ -1,7 +1,7 @@
 package com.cc.java;
 
 import java.util.Arrays;
-
+//Alle arrays möglichkeiten
 
 public class App {
     
